@@ -3,7 +3,8 @@
 /*******************************************/
 :root {
   --body-background: #1f1f1f;
-  --body-font: white;
+  --body-font: #e4e4e4;
+  --footer-color: #797979;
 }
 
 /* Box Model Hack */
@@ -18,26 +19,35 @@ body {
 /******************************************
 /* LAYOUT
 /*******************************************/
-h1 {
+h1,
+h3,
+p,
+footer {
   text-align: center;
 }
-button,
-input {
-  text-align: center;
-}
+
 .input-container {
-  width: 50%;
-  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-holder {
+  display: flex;
+  justify-content: center;
 }
 img {
-  height: 200px;
+  height: 500px;
   margin: 0 auto;
 }
 iframe {
   margin: 0 auto;
-  display: block;
+  display: inline-block;
   height: 500px;
   width: 700px;
+}
+footer {
+  color: var(--footer-color);
 }
 
 /******************************************

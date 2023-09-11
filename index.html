@@ -8,20 +8,49 @@
     />
     <meta name="keywords" content="NASA" />
 
-    <title>NASA Picture of the Day</title>
+    <title>NASA Blast Off</title>
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/img/site.webmanifest" />
   </head>
   <body>
     <h1>Picture of the Day</h1>
+    <p>
+      You're on a space ship. NASA has given you permission to fly to the
+      location of their satellites on specific days.
+      <br />
+      What day do you choose??
+    </p>
     <div class="input-container">
       <input type="date" name="" value="" />
-      <button type="button" name="button">Get Picture of the Day</button>
+      <button type="button" name="button">Blast Off!</button>
     </div>
-    <img src="" alt="Picture of the Day" />
-    <iframe src="" frameborder="0"></iframe>
-    <h3>Explanation</h3>
-
-    <script type="text/javascript" src="main.js"></script>
+    <h3></h3>
+    <div class="img-holder">
+      <img src="/img/nasa.jpg" alt="Picture of the Day" />
+      <iframe src="" frameborder="0" style="display: none"></iframe>
+      <br />
+    </div>
+    <p class="explanation">Explanation</p>
+    <footer>&copy; Copyright Garrett Stewart 2023</footer>
+    <script type="text/javascript" src="/js/main.js"></script>
   </body>
 </html>
