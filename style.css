@@ -1,0 +1,48 @@
+/******************************************
+/* CSS
+/*******************************************/
+:root {
+  --body-background: #1f1f1f;
+  --body-font: white;
+}
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--body-background);
+  color: var(--body-font);
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+h1 {
+  text-align: center;
+}
+button,
+input {
+  text-align: center;
+}
+.input-container {
+  width: 50%;
+  margin: 0 auto;
+}
+img {
+  height: 200px;
+  margin: 0 auto;
+}
+iframe {
+  margin: 0 auto;
+  display: block;
+  height: 500px;
+  width: 700px;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+.hidden {
+  display: hidden;
+}
