@@ -4,12 +4,13 @@ const img = document.querySelector("img");
 
 function getFetch() {
   const choice = document.querySelector("input").value;
+
   const url = `https://api.nasa.gov/planetary/apod?api_key=indnPhDKN3xXETqcUDUwrKSnETefnW5chcIS4fDd`;
 
   fetch(url + "&date=" + `${choice}`)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
+      // console.log(data);
       img.src = null;
       iframe.src = null;
       switch (data.media_type) {
@@ -26,8 +27,14 @@ function getFetch() {
         default:
           img.src = "/img/nasa.jpg";
       }
-      document.querySelector("h3").innerText = data.title;
-      document.querySelector(".explanation").innerText = data.explanation;
+      if (data.code == 400) {
+        document.querySelector("h3").innerText = data.msg;
+        document.querySelector(".explanation").innerText =
+          "Please enter a valid date to get a description";
+      } else {
+        document.querySelector("h3").innerText = data.title;
+        document.querySelector(".explanation").innerText = data.explanation;
+      }
     })
     .catch((err) => console.log(`error ${err}`));
 }
