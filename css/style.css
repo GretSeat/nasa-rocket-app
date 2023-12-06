@@ -1,53 +1,11 @@
-/******************************************
-/* CSS
-/*******************************************/
-:root {
-  --body-background: #1f1f1f;
-  --body-font: #e4e4e4;
-  --footer-color: #797979;
-}
-
-/* Box Model Hack */
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: var(--body-background);
-  color: var(--body-font);
-}
-/******************************************
-/* LAYOUT
-/*******************************************/
-h1,
-h3,
-p,
-footer {
-  text-align: center;
-}
-
-.input-container {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.img-holder {
-  display: flex;
-  justify-content: center;
-}
-img {
-  height: 500px;
-  margin: 0 auto;
-}
 iframe {
   margin: 0 auto;
   display: inline-block;
   height: 500px;
   width: 700px;
 }
-footer {
-  color: var(--footer-color);
+.card {
+  max-width: 80rem;
 }
 
 /******************************************
