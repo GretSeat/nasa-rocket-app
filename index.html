@@ -37,29 +37,53 @@
       crossorigin="anonymous"
     />
   </head>
-  <body>
-    <h1>Ready to head into destinations unknown?</h1>
-    <p>
-      You're on a space ship. NASA has given you permission to fly to the
-      location of their satellites on specific days.
-      <br />
-      What day do you choose??
-    </p>
-    <div class="input-container">
-      <input type="date" name="" value="" />
-      <button type="button" name="button">Blast Off!</button>
-    </div>
-    <h3></h3>
-    <div class="img-holder">
-      <img src="/img/nasa.jpg" alt="Picture of the Day" />
-      <iframe src="" frameborder="0" style="display: none"></iframe>
-      <br />
-    </div>
-    <p class="explanation">A Description Will Show Up Here</p>
-    <footer>
-      &copy; Copyright
-      <a href="https://github.com/GretSeat">Garrett Stewart</a> 2023
-    </footer>
+  <body class="p-5 bg-dark bg-gradient">
+    <main class="card mx-auto">
+      <header class="card-header text-center">
+        <h1 class="card-title fs-1">
+          Ready to head into destinations unknown?
+        </h1>
+        <p class="card-subtitle p-1">
+          You're on a space ship. NASA has given you permission to fly to the
+          location of their satellites on specific days.
+          <br />
+          What day do you choose??
+        </p>
+        <div class="p-2">
+          <input type="date" name="destination-date" value="" />
+          <button name="button" class="btn btn-danger" type="button">
+            Blast Off!
+          </button>
+        </div>
+      </header>
+      <section class="card-body">
+        <h3></h3>
+        <div>
+          <img
+            class="card-img-top"
+            src="/img/main-pic.jpg"
+            alt="Picture of the Day"
+          />
+          <iframe
+            class="ratio ratio-16x9"
+            src=""
+            frameborder="0"
+            style="display: none"
+          ></iframe>
+          <br />
+        </div>
+        <p class="card-text text-center" id="explanation"></p>
+      </section>
+      <footer class="card-footer text-center text-muted">
+        &copy; Copyright
+        <a
+          class="text-decoration-none text-muted"
+          href="https://github.com/GretSeat"
+          >Garrett Stewart</a
+        >
+        2023
+      </footer>
+    </main>
     <script type="text/javascript" src="/js/main.js"></script>
   </body>
 </html>
